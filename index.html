@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Black Hole</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts - Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- MENU NAVEGAÇÃO -->
+<nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+    <div class="container py-3">
+
+        <a href="#" class="navbar-brand primary-color">
+            <img src="images/robot-icon.png" alt="Ícone Robô">
+            <span>BLACK HOLE</span>
+        </a>
+
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+    
+        <i class="bi bi-list"></i>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link primary-color" aria-current="page" href="#banner">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link primary-color" href="#weapon-banner">Arma</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link primary-color" href="#hardware-banner">Hardware</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link primary-color" href="#robocup-banner">Robocup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link primary-color" href="#featured-container">Naicafe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link primary-color" href="#footer">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- FIM MENU NAVEGAÇÃO -->
+
+<!-- APRESENTAÇÃO DO ROBÔ -->
+<div class="container" id="slider-container">
+
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button 
+              type="button"
+              data-bs-target="#slider" 
+              data-bs-slide-to="0"
+              class="active" 
+              aria-current="true"
+              aria-label="slide 1"
+            ></button>
+            <button 
+              type="button"
+              data-bs-target="#slider" 
+              data-bs-slide-to="1"
+              aria-label="slide 2"
+            ></button>
+            <button 
+              type="button" 
+              data-bs-target="#slider" 
+              data-bs-slide-to="2"
+              aria-label="slide 3"
+            ></button>
+            <button 
+              type="button"
+              data-bs-target="#slider" 
+              data-bs-slide-to="3"
+              aria-label="slide 4"
+            ></button>
+            <button 
+              type="button"
+              data-bs-target="#slider" 
+              data-bs-slide-to="4"
+              aria-label="slide 5"
+            ></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/hole1.jpeg" class="d-block w-100" alt="Parte traseira do robô">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="/images/hole2.jpeg" class="d-block w-100" alt="Parte frontal do robô">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="/images/hole3.jpeg" class="d-block w-100" alt="Vista de cima do robô">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="/images/hole4.jpeg" class="d-block w-100" alt="Vista Lateral do Robô">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item ">
+                <img src="/images/hole5.jpeg" class="d-block w-100" alt="Vista Lateral do Robô">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <button 
+          class="carousel-control-prev" 
+          type="button" 
+          data-bs-target="#slider" 
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-chevron-compact-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button 
+          class="carousel-control-next" 
+          type="button" 
+          data-bs-target="#slider" 
+          data-bs-slide="next"
+        >
+          <i class="bi bi-chevron-compact-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <!-- BANNER -->
+    <div class="col-12 col-md-10 offset-md-1" id="banner">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="card text-center">
+                    <i class="bi bi-envelope-paper-heart primary-color"></i>
+                    <div class="card-body">
+                        <h5 class="card-title primary-color">Saiba mais sobre o Black Hole</h5>
+                        <p class="card-text secondary-color">
+                            Como parte do curso de Sistemas de Informação do primeiro ano da FIAP, este projeto é baseado em
+                            construir e documentar um robô para participar do Robocup. 
+                            A criação do Black Hole, robô articulado sobre rodas com controle eletrônico integrado, 
+                            foi um longo processo para nós integrantes do Naicafe. Queríamos um robô que remetesse 
+                            à força, impacto, destruição e poder, dessas características sitadas, surgiu o nome Black 
+                            Hole. Buraco negro é uma região do espaço-tempo em que o campo gravitacional é tão intenso 
+                            que nada pode escapar. Significado perfeito para o que queríamos demonstrar com o nosso robô. 
+                            Além do grande potencial físico do Black Hole, podemos citar a facilidade durante o seu processo 
+                            de construção, sendo uma ótima opção para ser ofertado no mercado de Robótica Educacional.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM BANNER -->
+
+</div>
+<!-- FIM APRESENTAÇÃO DO ROBÔ -->
+
+<!-- VÍDEOS -->
+<div class="container text-center" id="video-container">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-12 col-md-6" id="video-content">
+                <h5 class="primary-color">Construindo o Robô</h5>
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="320" height="433" src="https://www.youtube.com/embed/yIb2I-8h8ls" title="Construção do Robô | SPRINT 3 - Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-12 col-md-6" id="video-content">
+                <h5 class="primary-color">Robô Funcionando</h5>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="320" height="433" src="https://www.youtube.com/embed/LpXMme5A924" title="Robô Funcionando | SPRINT 3 - Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM VÍDEOS -->
+
+<!-- SISTEMA ARMAS -->
+<div class="container" id="info-container">
+
+    <div class="col-12" id="weapon-banner">
+        <div class="row">
+            <div class="col-12 col-md-5 info-banner1" id="info-banner">
+                <img src="/images/black-hole1.jpg" alt="Robô visto pela parte frontal e com as armas ativadas" class="img-fluid">
+            </div>
+
+            <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title primary-color">Sistema de Armas <i class="bi-joystick"></i></h2>
+                        <p class="subtitle secondary-color">
+                            A arma do robô consiste em duas estruturas práticas e resistentes. O material usado para construí-la foi:
+                            duas bolinhas de isopor (meio para segurar e espalhar os alfinetes), dois motores com redução - 193 rotações 
+                            por minutos (para que a arma se movimente, haja a rotação dos braços), hashi (sustentação das bolinhas de isopor) 
+                            e agulhas (para espetar a bexiga do oponente). Com esses poucos materiais, fora possível fazer duas armas com maior 
+                            alcance ao alvo. Sendo prontamente ativadas com o contato da Chave Fim-de-Curso de maneira eficiente e rápida.     
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <a href="#" class="btn btn-dark">Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM SISTEMA ARMAS -->
+
+<!-- HARDWARE -->
+<div class="container" id="info-container">
+
+    <div class="col-12" id="hardware-banner">
+        <div class="row">
+
+            <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title primary-color">Hardware <i class="bi-gear-fill"></i></h2>
+                        <p class="subtitle secondary-color">
+                            Basicamente, o hardware completo do robô consiste em: Arduino UNO (plataforma de prototipagem eletrônica que usamos 
+                            para definir os comandos do robô), Shield L293D (permite que haja a execução de rotação dos motores), 2 motores com 
+                            redução e roda para Arduino(as rodas recebem uma transmissão dos motores elétricos, fazendo com que elas consigam 
+                            fazer o robô se locomover), suporte e 6 pilhas do tipo AA (bateria do robô), jumpers (conduzir a corrente elétrica),
+c                           have-HH liga e desliga (para ligar e desligar o robô), LED (junto com a chave HH, demonstrará quando estiver ligado 
+                            ou desligado) e módulo Bluetooth HC-05 (criação de comunicação wireless para troca de informações entre o Arduino e 
+                            controle remoto do robô). Componentes facialmente encontrados em qualquer loja especializada em materiais eletrônicos 
+                            para uso no Arduino.     
+                        </div>
+                    <div class="col-12">
+                        <a href="#" class="btn btn-dark">Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5" id="info-banner">
+                <img src="/images/black-hole2.jpg" alt="Robô visto pela parte traseira e ligado" class="img-fluid">
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- FIM HARDWARE -->
+
+<!-- ROBOCUP -->
+<div class="container" id="info-container">
+    <div class="col-12" id="robocup-banner">
+        <h2 class="title primary-color">Evento que participaremos</h2>
+        <p class="subtitle secondary-color">
+            Saiba mais sobre a Robocup e o NEXT.
+        </p>
+    </div>
+</div>
+<div class="container" id="info-container">
+    <div class="col-12" id="robocup-banner">
+        <div class="row">
+
+            <div class="col-12 col-md-5" id="info-banner">
+                <img src="/images/nextRobocup.jpg" alt="Robocup no evento NEXT" class="img-fluid">
+            </div>
+
+            <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title primary-color">Robocup e NEXT <i class="bi-stars"></i></h2>
+                        <p class="subtitle secondary-color">
+                            O NEXT é o Festival de Tecnologia e Inovação que reune milhares de jovens talentos da FIAP apresentando 
+                            suas melhores criações: drones, robôs, conteúdos para VR devices, aplicativos mobiles e muito mais. O NEXT FIAP Festival 
+                            2022 acontecerá em um espaço na Vila Leopoldina, dia 22 de outubro. Já a Robocup, que ocorre dentro do NEXT, é a competição mais antiga da FIAP. Alunos dos 1°s anos 
+                            de Sistemas de Informação constroem robôs para participar de duelos, onde o principal objetivo é estourar o balão que o adversário 
+                            carrega. Para isso, todas as máquinas possuem armas em seu corpo. Mas a competição também exige o funcionamento pleno do robô: após 
+                            estourar o balão do oponente, ele deve recolher sua arma, só assim é considerado o vencedor.
+                        </p>    
+                    </div>
+                    <div class="col-12">
+                        <a href="#" class="btn btn-dark">Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- FIM ROBOCUP -->
+
+<!-- APRESENTAÇÃO GRUPO -->
+<div class="container" id="featured-container">
+    <div class="col-12">
+        <h2 class="title primary-color">Grupo Naicafe</h2>
+        <p class="subtitle secondary-color">
+            Integrantes do grupo responsável pela criação do Black Hole.
+        </p>
+    </div>
+    <div class="col-12" id="featured-images">
+        <div class="row g-4">
+            <div class="col-12 col-md-3">
+                <img src="/images/natalia-fofa-linda.jpg" alt="Integrante do Naicafe" class="img-fluid" />
+                <div class="banner-content">
+                    <h3>Natalia Yumi</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="/images/felipe.jpg" alt="Integrante do Naicafe" class="img-fluid" />
+                <div class="banner-content">
+                    <h3>Felipe Lin Oh</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="/images/isis-fofa-linda.jpg" alt="Integrante do Naicafe" class="img-fluid" />
+                <div class="banner-content">
+                    <h3>Ísis Castineira</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="/images/caue.jpg" alt="Integrante do Naicafe" class="img-fluid" />
+                <div class="banner-content">
+                    <h3>Cauê Ogasawara</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM APRESENTAÇÃO GRUPO -->
+
+<!-- RODAPÉ -->
+<footer class="container-fluid bg-dark-color" id="footer">
+    <div class="container">
+        <div class="row">
+            <!-- FOOTER TOP -->
+            <div class="col-12" id="footer-top">
+                <div class="row justify-content-between">
+                    <div class="col-4"><h2><i class="bi-robot"></i> BLACK HOLE</h2></div>
+                    <div class="col-4" id="social-icons">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER DETAILS -->
+            <div class="col-12" id="footer-details">
+                <div class="row">
+                    <div class="col-12 col-md-4" id="new-container">
+                        <h4>Formulário de Contato</h4>
+                        <p class="secondary-color">Inscreva-se para saber mais</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="name" class="form-control" placeholder="Digite o nome">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Digite um e-mail válido">
+                            </div>
+                            <div class="mb-3">
+                                <input type="message" class="form-control" placeholder="Mensagem">
+                            </div>
+                            <button class="btn btn-dark" type="submit">Inscrever</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-4" id="contact-container">
+                        <h4>Formas de Contato</h4>
+                        <p class="secondary-color">(11)1234-4321</p>
+                        <p class="secundary-color">blackhole@fiap.com</p>
+                    </div>
+                    <div class="col-12 col-md-4" id="links-container">
+                        <div class="row">
+                            <h4>Você pode estar procurando por:</h4>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#banner" class="secondary-color">Sobre</a></li>
+                                    <li><a href="#weapon-banner" class="secondary-color">Arma</a></li>
+                                    <li><a href="#hardware-banner" class="secondary-color">Hardware</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="#robocup-banner" class="secondary-color">Robocup</a></li>
+                                    <li><a href="#featured-container" class="secondary-color">Naicafe</a></li>
+                                    <li><a href="#footer" class="secondary-color">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FIM RODAPÉ -->
+
+
+</body>
+
+</html>
